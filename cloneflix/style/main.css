@@ -6,6 +6,7 @@
 }
 
 * {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,6 +19,10 @@ body {
   color: #FFF;
 }
 
+header {
+  background-color: #00000018;
+}
+
 header .container {
   display: flex;
   flex-direction: row;
@@ -26,10 +31,8 @@ header .container {
 }
 
 header .logo {
+  max-width: 200px;
   margin-left: 5px;
-  color: var(--vermelho);
-  font-family: 'Arial';
-  font-size: 40px;
 }
 
 header nav a {
@@ -46,7 +49,7 @@ header nav a:hover {
 /*FILME PRINCIPAL*/
 .filme-principal {
   font-size: 16px;
-  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/img/capa-thelibrarians.jpg);
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/img/capa-theumbrella.jpg);
   height: 440px;
   background-size: cover;
   display: flex;
@@ -70,7 +73,6 @@ header nav a:hover {
   width: 280px;
   background-color: rgba(109, 109, 110, 0.7);
   border: none;
-  color: #FFF;
   padding: 15px 30px;
   margin-right: 15px;
   font-family: 'Roboto', sans-serif;
@@ -80,12 +82,20 @@ header nav a:hover {
   transition: .3s ease all;
 }
 
+.botao a {
+  
+  color: #FFF;
+}
+
 .botao:hover {
   background-color: rgba(109, 109, 110, 0.4);
 }
 
 .b-left {
   background-color: rgb(255, 255, 255);
+}
+
+.b-left a {
   color: #000000;
 }
 
